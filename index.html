@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Learn Customizing BootstrapV5 with SASS</title>
 
+    <!-- WEBSITE ICON -->
+    <link rel="shortcut icon" href="images/icon.png">
+
     <!-- CSS STYLE and ICON -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
@@ -29,10 +32,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
+              <a class="nav-link" href="#testi">Testimonials</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Faq</a>
@@ -45,7 +48,7 @@
             </li>
           </ul>
           <button type="button" class="rounded-pill btn-rounded">
-            +2 783456780
+            +1 783456780
             <span><i class="fas fa-phone-alt"></i></span>
           </button>
         </div>
@@ -100,7 +103,7 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-4 col-lg-2">
-            <div class="companies__logo-box"><img src="images/campanies/campany-2.png" alt="Companies 2 logo" title="Companies 2 logo" class="img-fluid" /></div>
+            <div class="companies__logo-box"><img src="images/campanies/campany-1.png" alt="Companies 2 logo" title="Companies 2 logo" class="img-fluid" /></div>
           </div>
           <div class="col-md-4 col-lg-2">
             <div class="companies__logo-box"><img src="images/campanies/campany-2.png" alt="Companies 2 logo" title="Companies 2 logo" class="img-fluid" /></div>
@@ -123,7 +126,7 @@
 
     <!-- SERVICES START -->
 
-    <section id="services" class="our-services mt-0 mt-sm-5 mb-5 pb-5 pt-0 pt-sm-5">
+    <section id="services" class="our-services mt-0 mt-sm-5 mb-5 pb-5">
       <div class="container">
         <div class="row text-center">
           <h1 class="fw-bold mb-3 display-3">Our Services</h1>
@@ -152,7 +155,7 @@
       <!-- Services Content Start -->
       <div class="container">
         <!-- Marketing Services -->
-        <div class="row">
+        <div class="row my-2 my-sm-0 my-md-5 my-lg-0">
           <div class="col-md-6 mt-4 services align-self-center">
             <div class="services__content">
               <i class="fas fa-paper-plane text-primary"></i>
@@ -173,7 +176,7 @@
           </div>
         </div>
         <!-- Web Development Services -->
-        <div class="row">
+        <div class="row py-2 py-md-5 py-sm-0 py-lg-0">
           <div class="col-md-6 order-2 order-md-1 mt-4 services">
             <div class="services__content text-center">
               <img src="images/services/service-2.png" alt="Web Development Illustration" class="img-fluid" />
@@ -194,7 +197,7 @@
           </div>
         </div>
         <!-- Cloud Hosting Services -->
-        <div class="row">
+        <div class="row my-2 my-md-5 my-lg-0">
           <div class="col-md-6 mt-4 services align-self-center">
             <div class="services__content">
               <i class="fas fa-cloud-upload-alt text-primary"></i>
@@ -219,15 +222,9 @@
 
     <!-- TESTIMONIALS START -->
 
-    <section id="testi" class="testi">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="2"
-          d="M0,192L48,202.7C96,213,192,235,288,224C384,213,480,171,576,138.7C672,107,768,85,864,112C960,139,1056,213,1152,229.3C1248,245,1344,203,1392,181.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg>
-      <div class="container">
+    <section class="testi">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L80,128C160,160,320,224,480,213.3C640,203,800,117,960,90.7C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+      <div class="container" id="testi">
         <div class="row text-center text-white">
           <h1 class="display-3 fw-bold">Testimonials</h1>
           <hr style="width: 100px; height: 3px" class="mx-auto" />
@@ -354,7 +351,6 @@
                   <p>CEO & Founder</p>
                 </div>
               </div>
-             
             </div>
             <div class="text-center">
               <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

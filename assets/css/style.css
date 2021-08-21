@@ -11330,6 +11330,15 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 
+#services {
+  padding-top: 6rem;
+}
+@media (min-width: 768px) {
+  #services {
+    padding-top: 8rem;
+  }
+}
+
 .services__content i {
   font-size: 3rem;
   padding: 0.2rem 0;
@@ -11352,6 +11361,11 @@ textarea.form-control-lg {
     max-width: 70%;
     margin-top: -1rem;
   }
+}
+
+#testi {
+  padding-top: 8rem;
+  margin-bottom: 10rem;
 }
 
 .testi {

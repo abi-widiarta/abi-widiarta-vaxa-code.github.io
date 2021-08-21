@@ -11112,6 +11112,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+#testi {
+  padding-top: 8rem;
+  margin-bottom: 10rem;
+}
+
 .testi {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }

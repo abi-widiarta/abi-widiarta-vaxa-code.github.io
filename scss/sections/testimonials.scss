@@ -1,6 +1,13 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
+#testi {
+  padding-top: 8rem;
+  margin-bottom: 10rem;
+  // @include media-breakpoint-up(md) {
+  // }
+}
+
 .testi {
   @include gradient;
 

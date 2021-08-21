@@ -11112,6 +11112,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+#services {
+  padding-top: 6rem;
+}
+@media (min-width: 768px) {
+  #services {
+    padding-top: 8rem;
+  }
+}
+
 .services__content i {
   font-size: 3rem;
   padding: 0.2rem 0;
