@@ -1,0 +1,57 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.btn-rounded {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  position: relative;
+  padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid rgba($white, 0.6);
+  background-color: rgba($white, 0.5);
+  transition: 0.2s ease-in-out;
+
+  // Bisa pakai flexbox juga
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+
+  span {
+    position: absolute;
+    margin-left: 20px;
+    background-color: $primary;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%) scale(0.9);
+    transition: 0.2s ease-in-out;
+
+    i {
+      color: $white;
+      font-size: 1rem;
+
+      // Cara bawa ketengah 1
+      margin-top: 50%;
+      transform: translateY(-50%);
+
+      // Cara bawa ketengah  2
+      // line-height: 2.5rem;
+    }
+  }
+
+  &:hover {
+    @include gradient;
+    color: $white;
+    transition: 0.2s ease-in-out;
+
+    span {
+      background-color: rgba($black, 0.6);
+      transition: 0.2s ease-in-out;
+      transform: translateY(-50%) scale(1);
+    }
+  }
+}

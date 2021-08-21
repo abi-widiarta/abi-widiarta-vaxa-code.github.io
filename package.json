@@ -1,0 +1,23 @@
+{
+  "name": "costumizing-bootstrap-5",
+  "version": "1.0.0",
+  "description": "Custumizing Boostrap 5 with Vaxa Code",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "boostrap",
+    "customize",
+    "sass"
+  ],
+  "author": "N01r",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.0"
+  }
+}

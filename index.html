@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=2" />
+    <title>Learn Customizing BootstrapV5 with SASS</title>
+
+    <!-- CSS STYLE and ICON -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="logo image" style="max-width: 100px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Faq</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <button type="button" class="rounded-pill btn-rounded">
+            +2 783456780
+            <span><i class="fas fa-phone-alt"></i></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- INTRO SECTION START -->
+    <section id="home" class="intro-section">
+      <div class="container">
+        <div class="row align-items-center text-white">
+          <!-- INTRO CONTENT START -->
+          <div class="col-md-6 intros mb-5">
+            <h1 class="display-2">
+              <span class="display-2--intro">Hey!, I'm N01R</span>
+              <span class="display-2--description lh-base">this is a multi-purpose responsive layout created with bootstrap v5. (here you can place your description text)</span>
+            </h1>
+            <button type="button" class="rounded-pill btn-rounded">
+              Get in Touch
+              <span><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </div>
+
+          <!-- VIDEO CONTENT START -->
+          <div class="col-md-6 intros text-center">
+            <div class="video-box">
+              <img src="images/arts/intro-section-illustration.png" alt="intro illustration" class="img-fluid" />
+              <a href="#">
+                <span>
+                  <i class="fas fa-play-circle"></i>
+                </span>
+                <span class="border-animation border-animation--border-2"> </span>
+                <span class="border-animation border-animation--border-2"> </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="2"
+          d="M0,160L60,181.3C120,203,240,245,360,234.7C480,224,600,160,720,133.3C840,107,960,117,1080,133.3C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- COMPANIES START -->
+
+    <section id="companies" class="companies mt-sm-0 mt-5">
+      <div class="container">
+        <div class="row text-center">
+          <h4 class="fw-bold lead mb-3">Trusted by companies like</h4>
+          <div class="heading-line mb-3"></div>
+        </div>
+      </div>
+
+      <!-- Companies logo start -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box"><img src="images/campanies/campany-2.png" alt="Companies 2 logo" title="Companies 2 logo" class="img-fluid" /></div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box"><img src="images/campanies/campany-2.png" alt="Companies 2 logo" title="Companies 2 logo" class="img-fluid" /></div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box"><img src="images/campanies/campany-3.png" alt="Companies 3 logo" title="Companies 3 logo" class="img-fluid" /></div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box"><img src="images/campanies/campany-4.png" alt="Companies 4 logo" title="Companies 4 logo" class="img-fluid" /></div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box"><img src="images/campanies/campany-5.png" alt="Companies 5 logo" title="Companies 5 logo" class="img-fluid" /></div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box"><img src="images/campanies/campany-6.png" alt="Companies 6 logo" title="Companies 6 logo" class="img-fluid" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES START -->
+
+    <section id="services" class="our-services mt-0 mt-sm-5 mb-5 pb-5 pt-0 pt-sm-5">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="fw-bold mb-3 display-3">Our Services</h1>
+          <div class="heading-line mb-3"></div>
+        </div>
+      </div>
+
+      <!-- Description Start -->
+      <div class="container">
+        <div class="row pt-2 pb-2 mt-2 mt-sm-5 mb-3">
+          <div class="col-md-6 align-self-center">
+            <div class="bg-white p-3 mt-auto mb-auto">
+              <h2 class="fw-bold text-capitalize text-center m-0">our services range to initial design to deployment anywhere anytime</h2>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 border-left align-self-center">
+            <div class="bg-white p-4">
+              <p class="text-start lead m-0 services__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nesciunt eius. Repellendus, autem sunt tempora earum voluptatem, suscipit cupiditate repellat aliquam omnis quos, rem nihil.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Content Start -->
+      <div class="container">
+        <!-- Marketing Services -->
+        <div class="row">
+          <div class="col-md-6 mt-4 services align-self-center">
+            <div class="services__content">
+              <i class="fas fa-paper-plane text-primary"></i>
+              <h3 class="display-3--title">Marketing</h3>
+              <p class="lh-lg">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta repellendus veniam nulla, reiciendis autem aliquam! Voluptatum tenetur temporibus perferendis illo iste minus ad quidem animi voluptatem nesciunt.
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary">
+                Learn More
+                <span><i class="fas fa-arrow-right"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 services">
+            <div class="services__content text-center">
+              <img src="images/services/service-1.png" alt="Marketing Illustration" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+        <!-- Web Development Services -->
+        <div class="row">
+          <div class="col-md-6 order-2 order-md-1 mt-4 services">
+            <div class="services__content text-center">
+              <img src="images/services/service-2.png" alt="Web Development Illustration" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-6 order-1 order-md-2 mt-4 services align-self-center">
+            <div class="services__content text-end">
+              <i class="fas fa-code text-primary"></i>
+              <h3 class="display-3--title">Web Development</h3>
+              <p class="lh-lg">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta repellendus veniam nulla, reiciendis autem aliquam! Voluptatum tenetur temporibus perferendis illo iste minus ad quidem animi voluptatem nesciunt.
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary">
+                Learn More
+                <span><i class="fas fa-arrow-right"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Cloud Hosting Services -->
+        <div class="row">
+          <div class="col-md-6 mt-4 services align-self-center">
+            <div class="services__content">
+              <i class="fas fa-cloud-upload-alt text-primary"></i>
+              <h3 class="display-3--title">Cloud Hosting</h3>
+              <p class="lh-lg">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta repellendus veniam nulla, reiciendis autem aliquam! Voluptatum tenetur temporibus perferendis illo iste minus ad quidem animi voluptatem nesciunt.
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary">
+                Learn More
+                <span><i class="fas fa-arrow-right"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 services">
+            <div class="services__content text-center">
+              <img src="images/services/service-3.png" alt="Cloud Hosting Illustration" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS START -->
+
+    <section id="testi" class="testi">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="2"
+          d="M0,192L48,202.7C96,213,192,235,288,224C384,213,480,171,576,138.7C672,107,768,85,864,112C960,139,1056,213,1152,229.3C1248,245,1344,203,1392,181.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="row text-center text-white">
+          <h1 class="display-3 fw-bold">Testimonials</h1>
+          <hr style="width: 100px; height: 3px" class="mx-auto" />
+          <p class="lead">What out clients are saying</p>
+        </div>
+
+        <!-- Carousel Start -->
+        <div class="row align-items-center">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <!-- Testi client 1 -->
+              <div class="carousel-item active">
+                <!-- testi card -->
+                <div class="testi__card text-center">
+                  <p>
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dolorem cum, perspiciatis cumque laboriosam ut, cupiditate veritatis exercitationem deleniti est quo nobis repellat possimus, porro ex ducimus iusto
+                    quia modi aperiam dolorum. Saepe, facere! Repellendus fuga eaque ipsum iste voluptas?
+                    <i class="fas fa-quote-right"></i>
+                    <div class="ratings">
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                    </div>
+                  </p>
+                </div>
+                <!-- testi client pict-->
+                <div class="testi__pict text-center">
+                  <img src="images/testimonials/client-1.jpg" alt="client 1 pict" class="img-fluid" />
+                </div>
+                <!-- testi client name and job -->
+                <div class="testi__name text-center">
+                  <h3>Patrick Muriungi</h3>
+                  <p>CEO & Founder</p>
+                </div>
+              </div>
+
+              <!-- Testi client 2 -->
+              <div class="carousel-item">
+                <!-- testi card -->
+                <div class="testi__card text-center">
+                  <p>
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dolorem cum, perspiciatis cumque laboriosam ut, cupiditate veritatis exercitationem deleniti est quo nobis repellat possimus, porro ex ducimus iusto
+                    quia modi aperiam dolorum. Saepe, facere! Repellendus fuga eaque ipsum iste voluptas?
+                    <i class="fas fa-quote-right"></i>
+                    <div class="ratings">
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                    </div>
+                  </p>
+                </div>
+                <!-- testi client pict-->
+                <div class="testi__pict text-center">
+                  <img src="images/testimonials/client-2.jpg" alt="client 2 pict" class="img-fluid" />
+                </div>
+                <!-- testi client name and job -->
+                <div class="testi__name text-center">
+                  <h3>Patrick Muriungi</h3>
+                  <p>CEO & Founder</p>
+                </div>
+              </div>
+
+              <!-- Testi client 3 -->
+              <div class="carousel-item">
+                <!-- testi card -->
+                <div class="testi__card text-center">
+                  <p>
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dolorem cum, perspiciatis cumque laboriosam ut, cupiditate veritatis exercitationem deleniti est quo nobis repellat possimus, porro ex ducimus iusto
+                    quia modi aperiam dolorum. Saepe, facere! Repellendus fuga eaque ipsum iste voluptas?
+                    <i class="fas fa-quote-right"></i>
+                    <div class="ratings">
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                    </div>
+                  </p>
+                </div>
+                <!-- testi client pict-->
+                <div class="testi__pict text-center">
+                  <img src="images/testimonials/client-3.jpg" alt="client 3 pict" class="img-fluid" />
+                </div>
+                <!-- testi client name and job -->
+                <div class="testi__name text-center">
+                  <h3>Patrick Muriungi</h3>
+                  <p>CEO & Founder</p>
+                </div>
+              </div>
+
+              <!-- Testi client 4 -->
+              <div class="carousel-item">
+                <!-- testi card -->
+                <div class="testi__card text-center">
+                  <p>
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dolorem cum, perspiciatis cumque laboriosam ut, cupiditate veritatis exercitationem deleniti est quo nobis repellat possimus, porro ex ducimus iusto
+                    quia modi aperiam dolorum. Saepe, facere! Repellendus fuga eaque ipsum iste voluptas?
+                    <i class="fas fa-quote-right"></i>
+                    <div class="ratings">
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                      <i class="fas fa-star text-primary opacity-75"></i>
+                    </div>
+                  </p>
+                </div>
+                <!-- testi client pict-->
+                <div class="testi__pict text-center">
+                  <img src="images/testimonials/client-4.jpg" alt="client 4 pict" class="img-fluid" />
+                </div>
+                <!-- testi client name and job -->
+                <div class="testi__name text-center">
+                  <h3>Patrick Muriungi</h3>
+                  <p>CEO & Founder</p>
+                </div>
+              </div>
+             
+            </div>
+            <div class="text-center">
+              <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              </button>
+              <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="2"
+          d="M0,160L48,138.7C96,117,192,75,288,69.3C384,64,480,96,576,117.3C672,139,768,149,864,138.7C960,128,1056,96,1152,96C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

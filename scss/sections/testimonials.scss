@@ -1,0 +1,63 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.testi {
+  @include gradient;
+
+  &__card {
+    background-color: rgba($white, 0.8);
+    padding: 2rem 1.25rem;
+    border-radius: 0.625rem;
+
+    p {
+      line-height: large;
+      font-size: 1rem;
+
+      i {
+        font-size: 1.5rem;
+        color: rgba($primary, 0.6);
+      }
+
+      .ratings {
+        i {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  &__pict {
+    // CARA SAYA
+    margin: 0 auto;
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+
+    img {
+      position: absolute;
+      border: 0.4rem solid lighten($primary, 10%);
+      bottom: 2rem;
+      left: 0;
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    // CARA VAXA CODE
+    // margin-top: 1rem;
+    // width: 6rem;
+    // height: 6rem;
+    // position: absolute;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+
+    // img {
+    //   border-radius: 50%;
+    //   border: 0.325rem solid lighten($primary, 10%);
+    // }
+  }
+
+  &__name {
+    color: $white;
+    // padding-top: 5rem;
+  }
+}

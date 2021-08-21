@@ -1,0 +1,18 @@
+// USE CUSTOM SCSS
+@use 'custom';
+
+// IMPORT THE COMPONENTS
+@use 'components/buttons';
+@use 'components/animations';
+@use 'components/mixins';
+@use 'components/typography';
+
+// IMPORT THE SECTIONS
+@use 'sections/navbar.scss';
+@use 'sections/intro-section.scss';
+@use 'sections/companies.scss';
+@use 'sections/services.scss';
+@use 'sections/testimonials.scss';
+@use 'sections/portfolio.scss';
+@use 'sections/get-started.scss';
+@use 'sections/footer.scss';
